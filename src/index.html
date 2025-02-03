@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,7 +35,7 @@
     <header id="home" class="bg-green-950 text-white font-primary lg:h-screen">
       <!-- Navigation -->
       <nav
-        class="md:flex justify-between text-center px-6 md:px-32 border-b border-amber-100 p-2"
+        class="md:flex justify-between text-center px-6 md:px-32 border-b border-amber-100 p-2 fixed top-0 left-0 right-0 bg-green-950"
       >
         <!-- Logo -->
         <div>
@@ -55,10 +55,14 @@
               >
             </li>
             <li>
-              <a class="hover:text-yellow-400 duration-300" href="#">Populer</a>
+              <a class="hover:text-yellow-400 duration-300" href="#populer"
+                >Populer</a
+              >
             </li>
             <li>
-              <a class="hover:text-yellow-400 duration-300" href="#">Review</a>
+              <a class="hover:text-yellow-400 duration-300" href="#review"
+                >Review</a
+              >
             </li>
           </ul>
         </div>
@@ -223,7 +227,7 @@
     <!-- About Section End -->
 
     <!-- Choices Plants -->
-    <section class="py-8 bg-green-800 text-center">
+    <section id="populer" class="py-12 bg-green-800 text-center">
       <h1 class="text-2xl text-yellow-400 font-secondary my-2">
         Your Choice Plant
       </h1>
@@ -342,7 +346,10 @@
     <!-- Choices Plants End -->
 
     <!-- Review Section -->
-    <section class="bg-green-950 md:px-32 pt-14 text-center text-white">
+    <section
+      id="review"
+      class="bg-green-950 md:px-32 pt-14 pb-14 text-center text-white"
+    >
       <h1 class="text-2xl font-secondary text-yellow-400">Customer Review</h1>
       <p>Follow instruction for more</p>
 
@@ -368,7 +375,9 @@
                   <p class="text-sm">Designer</p>
                 </div>
                 <div>
-                  <i class="fa-solid fa-quote-right text-white text-3xl ml-28"></i>
+                  <i
+                    class="fa-solid fa-quote-right text-white text-3xl ml-28"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -394,7 +403,9 @@
                   <p class="text-sm">Developer</p>
                 </div>
                 <div>
-                  <i class="fa-solid fa-quote-right text-white text-3xl ml-20"></i>
+                  <i
+                    class="fa-solid fa-quote-right text-white text-3xl ml-20"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -420,7 +431,9 @@
                   <p class="text-sm">Designer</p>
                 </div>
                 <div>
-                  <i class="fa-solid fa-quote-right text-white text-3xl ml-28"></i>
+                  <i
+                    class="fa-solid fa-quote-right text-white text-3xl ml-28"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -430,14 +443,89 @@
     </section>
     <!-- Review Section End -->
 
-    <!-- Subscription -->
-     <section class="bg-green-700 p-4 w-9/12 mx-auto rounded-md text-white">
-      <h2 class="text-2xl mb-2"> <span class="text-yellow-600">Subscribe</span> to our newsletter</h2>
-      <div class="flex gap-2">
-        <input type="email" placeholder="Your Email Address" class="bg-white w-full outline-0 rounded-md px-3">
-        <button class="px-2 py-1 bg-green-950 text-white rounded-md">Subscribe</button>
+    <!-- Footer Section -->
+    <footer class="bg-yellow-200 text-center pt-20 pb-20 relative">
+      <!-- Subscription -->
+      <div
+        class="container mx-auto text-white absolute top-0 left-0 right-0 -translate-y-1/2"
+      >
+        <div class="bg-green-800 p-4 rounded-md">
+          <h2 class="text-2xl mb-2">
+            <span class="text-yellow-600">Subscribe</span> to our newsletter
+          </h2>
+          <div class="flex gap-2">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="bg-white w-full outline-0 rounded-md px-3"
+            />
+            <button class="px-2 py-1 bg-green-950 text-white rounded-md">
+              Subscribe
+            </button>
+          </div>
+        </div>
       </div>
-     </section>
-     <!-- Subscription End -->
+      <!-- Subscription End -->
+
+      <!-- Social Icon -->
+      <div class="relative top-8">
+        <div class="space-x-2 w-36 mx-auto bg-yellow-200">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 container mx-auto mt-5 border-t border-green-500 pt-8 gap-2"
+      >
+        <!-- Card 1 -->
+        <div>
+          <img class="w-10 ml-10" src="../assets/leaf-1.png" />
+          <h3 class="font-secondary text-2xl text-green-800 text-left">
+            IndorePlants
+          </h3>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="text-left">
+          <h2 class="text-gray-800 text-xl font-medium mb-3">Quick Links</h2>
+          <ul class="space-y-1">
+            <li><a href="#" class="text-gray-600">Plants</a></li>
+            <li><a href="#" class="text-gray-600">Flower</a></li>
+            <li><a href="#" class="text-gray-600">Gardening</a></li>
+            <li><a href="#" class="text-gray-600">Seeds</a></li>
+            <li><a href="#" class="text-gray-600">Shipping</a></li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="text-left">
+          <h2 class="text-gray-800 text-xl font-medium mb-3">
+            Populer Services
+          </h2>
+          <ul class="space-y-1">
+            <li><a href="#" class="text-gray-600">Tree Planting</a></li>
+            <li><a href="#" class="text-gray-600">Grass Cutting</a></li>
+            <li><a href="#" class="text-gray-600">Weeds Control</a></li>
+            <li><a href="#" class="text-gray-600">Projects</a></li>
+          </ul>
+        </div>
+        <!-- Card 4 -->
+        <div class="text-left">
+          <h2 class="text-gray-800 text-xl font-medium mb-3">Contact Us</h2>
+          <div class="text-gray-600 mb-2.5">
+            <p>+888 0032 6457</p>
+            <p>abc23@yahoo.com</p>
+          </div>
+          <div class="text-gray-600">
+            <p>tokyo,brisben</p>
+            <p>Dhaka,Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
